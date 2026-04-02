@@ -1,0 +1,20 @@
+2nd April 2026
+=================================================================================
+1. Local system  2. local REPO 3. staging 4.rEMOTE REPO
+
+Case1: LOCAL SYSTEM TO LOCAL REPO
+git add "filename" : will add single file whose name is provided
+git add . :to add all the files in local system
+
+command TO CHEECK THE STATUS OF FILE WHETHE RIT IS ADDED INTO LOCAL REPO OR NOT.
+
+use COMMAND  git status
+if file name comes in red color: file is not added in local repo
+if file name is coming in green color then file is added in local repo
+
+2. Local repo to staging:
+git commit -m "this IS GIT GUIDE"
+
+3. Staging TO REMOTE REPO(GitHub:
+git push
+
