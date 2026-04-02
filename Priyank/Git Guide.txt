@@ -12,3 +12,9 @@ use COMMAND  git status
 if file name comes in red color: file is not added in local repo
 if file name is coming in green color then file is added in local repo
 
+2. Local repo to staging:
+git commit -m "this IS GIT GUIDE"
+
+3. Staging TO REMOTE REPO(GitHub:
+git push
+
