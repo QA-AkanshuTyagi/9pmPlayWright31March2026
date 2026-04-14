@@ -6,7 +6,7 @@ Case1: LOCAL SYSTEM TO LOCAL REPO
 git add "filename" : will add single file whose name is provided
 git add . :to add all the files in local system
 
-command TO CHEECK THE STATUS OF FILE WHETHE RIT IS ADDED INTO LOCAL REPO OR NOT.
+Command TO CHEECK THE STATUS OF FILE WHETHE RIT IS ADDED INTO LOCAL REPO OR NOT.
 
 use COMMAND  git status
 if file name comes in red color: file is not added in local repo
