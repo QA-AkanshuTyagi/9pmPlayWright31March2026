@@ -1,1 +1,1 @@
-console.log("Welcome to the git repository help GUIDE!");
+console.log("Welcome to the git repository helping GUIDE!");
