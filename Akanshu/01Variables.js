@@ -15,13 +15,14 @@ let firstname1="shubham"
 firstname1="neha"
 var firstName="hero"
 console.log("first",firstName)
-var firstName="Rahul";
+const firstName="Rahul";
+firstName="Rahul Singh Thakur"
 console.log("Second",firstName)
 firstName="Rahul Singh Thakur"
 console.log("third",firstName)
 }
 
-console.log(firstName)
+console.log(firstName1)
 
 console.log("##########################################")
 
