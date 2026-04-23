@@ -20,4 +20,8 @@ git push
 
 ======
 14 April
+<<<<<<< HEAD
 done functional changes in priyank file.
+=======
+doing some functional changes in priyank file on 23.
+>>>>>>> bd235d0 (moving copde on 24)
