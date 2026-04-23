@@ -1,0 +1,20 @@
+{
+  "name": "9pmplaywright31march2026",
+  "version": "1.0.0",
+  "description": "Learning JS",
+  "homepage": "https://github.com/QA-AkanshuTyagi/9pmPlayWright31March2026#readme",
+  "bugs": {
+    "url": "https://github.com/QA-AkanshuTyagi/9pmPlayWright31March2026/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QA-AkanshuTyagi/9pmPlayWright31March2026.git"
+  },
+  "license": "ISC",
+  "author": "Priyank",
+  "type": "commonjs",
+  "main": "Git.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

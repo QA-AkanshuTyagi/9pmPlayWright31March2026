@@ -1,6 +1,6 @@
 2nd April 2026
 =================================================================================
-1. Local system  2. local REPO 3. staging 4.rEMOTE REPO
+1. Local system  2. local REPO 3. staging 4.REMOTE REPO
 
 Case1: LOCAL SYSTEM TO LOCAL REPO
 git add "filename" : will add single file whose name is provided
@@ -20,8 +20,4 @@ git push
 
 ======
 14 April
-<<<<<<< HEAD
-done functional changes in priyank file.
-=======
-doing some functional changes in priyank file on 23.
->>>>>>> bd235d0 (moving copde on 24)
+done functional changes in noor file.
