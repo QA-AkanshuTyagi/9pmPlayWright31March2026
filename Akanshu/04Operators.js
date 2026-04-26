@@ -37,5 +37,25 @@ if(a==b){
 
 //assignment operator: =, +=, -=, *=, /=, %=, **=
 
+//assigning of the value
+
+let x=10;
+x+=5
+// x+=5; //x=x+5
+console.log(x);
+
+x-=5
+console.log(x);
+x*=5;
+console.log(x);
+
+x/=5;
+console.log(x);
+
+x%=5;
+console.log(x);
+x=10;
+x**=5;
+console.log(x);
 
 
