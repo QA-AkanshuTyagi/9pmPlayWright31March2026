@@ -1,5 +1,9 @@
 let fName = "Nitendra";
-let lName = "Gautam";
+let lName = "nitendrA";
+
+console.log(lName.charAt(2));
+
+console.log(lName.split("").reverse().join(""));
 
 console.log(`My name is ${fName} ${lName}`)
 console.log(fName.concat(" "+lName))
@@ -14,3 +18,8 @@ console.log("strings matched")
 else{
     console.log("Strings don't match")
 }
+let reversedName="";
+for (let i=fName.length-1; i>=0;i--){
+    reversedName= reversedName+fName[i];
+}
+console.log(reversedName)
