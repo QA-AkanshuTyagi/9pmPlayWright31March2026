@@ -11,6 +11,8 @@ var firstName="anuj"
 
 }
 console.log(firstName)
+
+
 const firstName2="aarti"
 if(2<3){
 
