@@ -93,7 +93,7 @@ console.log(newname.substring(0,11)); //same slice wala
 
 //replace method is used to replace a specified value with another value in a string. 
  
-console.log(newname.replace("Priyank","Hehe")) // concern -- My replace nahi ho raha.. 
+console.log(newname.replace("My","New")) // concern -- My replace nahi ho raha.. 
 
 //replaceAll method is used to replace all occurrences of a specified value with another value
 
