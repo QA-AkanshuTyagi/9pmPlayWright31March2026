@@ -30,6 +30,7 @@ let arr=["rahul",18, true, null,"git","copilot"]
 
 
 
+
 console.log(arr[1]);
 console.log(arr.length);
 
@@ -39,5 +40,12 @@ let obj={
     age:12,
     isMarried:false
 }
-
+//json: javascript object notation
 console.log(obj.name)
+
+let obj2={
+
+
+
+
+}

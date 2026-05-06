@@ -16,7 +16,7 @@ console.log(numb);
 
 })
 
-
+//config  
 
 //for of loop
 

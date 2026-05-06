@@ -1,6 +1,6 @@
 //conditions
 let age=10;
-if(!(age>18)){
+if(age<5){
 
 console.log("you are eligible to vote");
 
@@ -10,7 +10,7 @@ console.log("you are eligible to vote");
 }
 
 /*
-if(condition){{
+if(condition){
 
 }
 
