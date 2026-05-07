@@ -31,7 +31,8 @@ console.log(str.charAt(str.length-1));//to find the character at a specific inde
 console.log(str.length);//length of the string
 
 console.log(str.toUpperCase());//to convert the string to uppercase
-console.log(str.toLowerCase());//to convert the string to lowercase
+console.log(str.toLowerCase());//to convert the string to lowercase\
+//===========================================================================
 console.log(str.ignoreCase);//to ignore the case of the string
 let expectedText="Apply Now"//APPLY NOW ///apply now
 let actualText="apply now"; //APPLY NOW //apply now
@@ -39,3 +40,4 @@ if(expectedText.equalsignoreCase(actualText)){
 
 
 }
+
