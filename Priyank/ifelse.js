@@ -45,3 +45,17 @@ else {
 }
 
 
+console.log ("**************************************************")
+
+let browser = "chrome"
+
+if(browser =="Chrome" || browser == "chrome" || browser == "CHROME")
+{
+    console.log("You r using Chrome browser")
+} else if (browser == "Edge") {
+    console.log("You r using Edge browser")
+} else if (browser == "Opera"){
+    console.log("You r using Opera browser")
+}else {
+    console.log("Not a valid browser")
+}
