@@ -1,8 +1,8 @@
 
 function enterUserName(name,age,married){
 
-return name
-console.log(age)
+return [name,age,married]
+
 
 }
 function enterPassword(password){   
@@ -12,10 +12,11 @@ return password
 }
 
 function testCase1(){
+    age=19
 username=enterUserName("Akanshu",30,false);
 password=enterPassword(12345678);
-if(username==="Akanshu" && password== 12345678){
-console.log("login successful")
+if(age>18){
+console.log(username)
 
 }
 
