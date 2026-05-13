@@ -31,7 +31,7 @@ arr.includes(100) // false
 //splice method is used to add or remove element from the array
 let arr2=[1,2,4,5,6,7,8,9,10]
 //console.log(arr2) // remove element from index 0 to 3
-arr2.splice(2,3,88) // insert 88 at index 2
+arr2.splice(2,11,88) // insert 88 at index 2
 console.log(arr2)
 
 
