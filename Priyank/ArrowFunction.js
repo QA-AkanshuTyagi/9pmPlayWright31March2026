@@ -1,4 +1,4 @@
-// Arrow Function -- Short, easy, aur simple way to write functions in JavaScript.
+// Arrow Function -- Short, easy, aur modern way to write functions in JavaScript.
 
 
 // function declaration
