@@ -1,17 +1,19 @@
 
+function delay(){
 
-console.log("a1 function is called");
+return new Promise(resolve =>{setTimeout(() => {
+    resolve("I am done")        },5000)
+
+}
+)}
+
+async function runTask(){
+console.log("Task started")
+let result =  await delay()
+
+console.log(result)
+console.log("End") 
 
 
-setTimeout(()=>{
-
-console.log("f3 function is called");
-
-},5000)
-
-
-
-console.log("a2 function is called"); 
-
-
-
+}
+runTask()
