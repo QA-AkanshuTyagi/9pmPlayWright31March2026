@@ -41,9 +41,3 @@ function clickONLoginButton(){
 loginPage11("akanshu","gupta");
 loginPage11("rahul","tandon");
 
-let loginPagets=(firstname:string,lastname:string):string=>{
-   firstname="neha"
-console.log("full name"+"==> "+firstname+lastname)
-return firstname+lastname;
-
-}
