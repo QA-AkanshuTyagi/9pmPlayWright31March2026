@@ -29,3 +29,7 @@ const domainName1=dom=>console.log(dom)
 testCase2()
 console.log(DomainName("www.facebook.com"))
 domainName1("www.google.com")
+
+login()=>{
+    console.log("login successful")
+};
