@@ -1,18 +1,22 @@
 import { test, expect } from '@playwright/test';
+ 
+test('Homepage', async ({ page }) => {
+ 
+   await page.goto('https://www.amazon.in')
+ 
+   await page.getByPlaceholder('Search Amazon.in', {exact : true}).fill('Iphone16')
+   await page.getByRole("button", {name : 'Go', exact : true}).click()
+ 
+   await page.getByText('iPhone 16 Plus 256 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White').click()
+   //await page.getByRole("button",{name : 'Add to cart'}).click()
+const [newPage]= await Promise.all([page.context().waitForEvent('page'),page.locator('(//span[@id="submit.add-to-cart-announce"])[2] ').click()])
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});
+   await newPage.waitForLoadState();
+   
+   //await page.getByTitle('Add to Shopping Cart', {exact: true}).click()
+ 
+   //await page.getByText('Add to cart').first().click()
+ 
+ 
+ 
+})
