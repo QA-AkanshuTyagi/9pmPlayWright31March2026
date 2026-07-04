@@ -7,3 +7,9 @@ test('test', async ({ page }) => {
  const numb = await page.getByText('link').count();
  console.log(numb);
 });
+
+
+const data =
+const checkbox = await page.getByRole ('table').filter({hasText : 'Smartphone'}).getByRole('row').filter({hasText : 'Laptop'}).getByRole('checkbox').click()
+ 
+await expect (checkbox).toBeChecked()
