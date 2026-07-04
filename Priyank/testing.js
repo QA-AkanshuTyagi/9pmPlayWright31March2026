@@ -15,6 +15,15 @@ name2 = 'PriyankNew'; // This will throw an error because name2 is a constant
 */
 
 
+
+
+
+
+
+
+
+
+
 let name = 'PriyankSrivastava';
 name = 'PriyankN';
 name = 'PriyankNew';
