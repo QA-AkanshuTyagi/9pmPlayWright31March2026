@@ -30,6 +30,6 @@ testCase2()
 console.log(DomainName("www.facebook.com"))
 domainName1("www.google.com")
 
-login()=>{
+login=()=>{
     console.log("login successful")
 };
