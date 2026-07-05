@@ -30,6 +30,7 @@ loginPage()
 console.log("########################################################################")
     function loginPage1(){
 try{
+    
 let a1=10;
 console.log(a1/d)
 
