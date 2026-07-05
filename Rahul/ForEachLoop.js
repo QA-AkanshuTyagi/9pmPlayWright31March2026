@@ -7,7 +7,7 @@ arr.forEach(function(numb){
     console.log(numb);
 })
 
-//using for each loop to print the elements in an array
+//using for each loop(for of loop) to print the elements in an array
 
 for (let number of arr){
     console.log(number);
