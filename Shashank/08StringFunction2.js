@@ -38,7 +38,7 @@ console.log(str1.replace(" ","_")) // it will replace only the first space with 
 
 console.log("===== replaceAll() =====") // if i want to replace all the occurences of a word or space in a string then we can use replaceAll() method        
 console.log(str1.replaceAll(" ","_")) // it will replace all the spaces with _
-console.log(str1.replaceAll("Shashank","Lakshita"))
+console.log(str1.replaceAll("Shashank","Lakshita")) // it will replace Shashank to Lakshita
 
 console.log("===== split() ======");
 //wants to convert string into array then we can use split() method
