@@ -11,7 +11,7 @@ const searchBox=page.locator("#twotabsearchtextbox")
 await expect(searchBox).toHaveAttribute("placeholder","Search Amazon.in")
 
 let  attributeValue=await searchBox.getAttribute("placeholder");
-console.log(attributeValue)
+console.log("hello everyone soft nassertion here")
 
 });
 
@@ -22,7 +22,7 @@ const checkbox1= page.locator("(//form[@id='checkboxes']/input)[1]")
 
 await checkbox1.click();
 await expect(checkbox1).toHaveAttribute("checked");
-
+console.log("checkbox1 is checked") 
 
 })
 
@@ -31,9 +31,12 @@ test('Validating the "tobe" assertion',async({page})=>{
   const url="https://www.amazon.in";
 
 page.goto(url)
-
+const expectedTitle=""
+const title=await page.title();
+console.log(title)
+await expect(page).toHaveTitle("Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in")
 const mobile=page.locator("(//a[text()='Mobiles'])[1]")
-
+console.log("hello everyone soft nassertion here")
 const actualText=await mobile.textContent();
 
 const ExpectedText= "Mob"
