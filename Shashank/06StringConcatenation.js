@@ -2,16 +2,19 @@ let firstname = "Shashank";
 let lastname = "Jain";
 
 //String Concatenation
+console.log("====1st method of String Concatenation====")
 console.log(firstname + lastname) //without space
 console.log(firstname+" "+lastname) // with space
 
 // 2nd method of Concatenation
+console.log("====2nd method of Concatenation====")
 console.log(firstname.concat(lastname)); //without space
 console.log(firstname.concat(" ",lastname)); // with space
 console.log(firstname.concat(" ").concat(lastname)); // with space
 console.log(firstname,lastname); // with space
 
 //template litteral
+console.log("====template litteral====")
 let carModel = "Sierra";
 console.log(`My Car model is ${carModel}`); // My Car model is Sierra
 //In template litteral we can use backticks `` and ${} to insert variables or expressions inside the string. It allows us to create dynamic strings easily without the need for concatenation.
