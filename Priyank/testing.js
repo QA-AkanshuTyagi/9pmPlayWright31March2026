@@ -125,3 +125,30 @@ console.log(`hello guys, ${name1}`)
 /////////////////////////////////////////////////////////////////////////////////////
 
 
+let name = "Priyank"; // string
+let name1 = 'S' // string
+let age = 202; // number
+let isStudent = true; // boolean
+let address = null; // null means no value
+let phoneNumber; // undefined
+let id = Symbol("name"); // symbol is a unique identifier
+
+console.log ("Find the type of the variables");
+
+console.log(typeof name); // string
+console.log(typeof name1); // string
+console.log(typeof age); // number
+console.log(typeof isStudent); // boolean       
+console.log(typeof address); // object (this is a quirk in JavaScript, null is considered an object)
+console.log(typeof phoneNumber); // undefined   
+console.log(typeof id); // symbol
+
+console.log ("Print the values of the variables");
+
+console.log(name); // Priyank
+console.log(name1); // S
+console.log(age); // 22
+console.log(isStudent); // true
+console.log(address); // null
+console.log(phoneNumber); // undefined  
+console.log(id); // Symbol(id)
