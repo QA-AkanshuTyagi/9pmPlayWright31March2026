@@ -7,6 +7,7 @@ function Name (newname) {
     return newname
 }
 
+
 // first way to write arrow function
 
 const newname=(Yes)=>{ // use any thing (var, const, let) then function name and then = and then parameter in () and then => and then function body in {}
