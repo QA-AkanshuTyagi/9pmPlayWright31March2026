@@ -58,7 +58,7 @@ for (let i = 100; i >= 2; i--) {
 console.log('############################################################')
 
 // 5.write a program to print to reverse the string. HELLO TEST OF Playwright  
-// O/P Playwright fo tset hello
+// O/P - Playwright fo tset hello
 
 let sentence = 'HELLO TEST OF Playwright'
 let sen1 = (sentence.split(" "))
