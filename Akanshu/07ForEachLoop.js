@@ -1,40 +1,45 @@
 let name="akanshu";
 
 
-//foreach loop is used to iterate over the elements in an array.
+// for loop:
 
 let arr=[1,2,3,4,5];
-
-
-// 2method : 1.for each method 2. for of loop
-
-//for each method:
-arr.forEach(function(numb){
-
-
-console.log(numb);
-
-})
-
-//config  
-
-//for of loop
-
-for(let number of arr){
-console.log(number);
+for(let i=0;i<=arr.length-1;i++){
+console.log(arr[i]);
 
 }
-let productNames=["laptop","mobile","tablet","monitor"];
+
+// for of loop
+for(let aa of arr){
+
+console.log(aa);
 
 
-for(let product of productNames){
-
-///searching the product on search bar
-//validating th prodcut
-
-console.log(product);   
 }
 
+for(let i in arr){
+console.log(i)
+
+}
+
+//for in loop
+// to iterate over the objects;
+
+let obj={
 
 
-//list
+name:'akanshu',
+age:18,
+phonenumber:123456,
+pincode : 123,
+profession: 'IT'
+
+
+
+
+}
+console.log(obj.name);
+for(let key in obj){
+
+console.log(key,obj[key]);
+}
