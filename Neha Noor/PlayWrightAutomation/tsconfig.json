@@ -8,5 +8,5 @@
     "esModuleInterop": true,
     "types": ["node", "playwright/test"]
   },
-  "include": ["tests/**/*.ts", "playwright.config.ts"]
+  "include": ["tests/**/*.ts", "playwright.config.ts", "../tests/03FirstFlow.spec.ts"]
 }

@@ -16,5 +16,8 @@
   "main": "Git.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
   }
 }

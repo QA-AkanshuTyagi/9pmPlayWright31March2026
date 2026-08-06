@@ -15,12 +15,9 @@ tools:
   - playwright-test/browser_navigate_back
   - playwright-test/browser_network_request
   - playwright-test/browser_network_requests
-<<<<<<< HEAD
-=======
   - playwright-test/browser_press_key
   - playwright-test/browser_run_code_unsafe
   - playwright-test/browser_select_option
->>>>>>> 88090e46842762dbfded418cf8e295a4ee52c445
   - playwright-test/browser_snapshot
   - playwright-test/browser_take_screenshot
   - playwright-test/browser_type
@@ -39,11 +36,7 @@ mcp-servers:
       - "*"
 ---
 
-<<<<<<< HEAD
-You are an expert web test planner with extensive experience in quality assurance, user experience testing, and comprehensive test
-=======
 You are an expert web test planner with extensive experience in quality assurance, user experience testing, and test
->>>>>>> 88090e46842762dbfded418cf8e295a4ee52c445
 scenario design. Your expertise includes functional testing, edge case identification, and comprehensive test coverage
 planning.
 
