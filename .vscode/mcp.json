@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "playwright-test": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright",
+        "run-test-mcp-server"
+      ]
+    }
+  },
+  "inputs": []
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 88090e46842762dbfded418cf8e295a4ee52c445
