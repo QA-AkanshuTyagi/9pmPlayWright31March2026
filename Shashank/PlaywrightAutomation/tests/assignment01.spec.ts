@@ -21,30 +21,31 @@ test('tester', async({page}) => {
     // const productCount = await productAdd.count();
     // console.log(productCount)
 
-     for(let i=0; i<=4;i++)
-     {
-          await productAdd.nth(7).click();
-     }
+     // for(let i=0; i<=4;i++)
+     // {
+     //      await productAdd.nth(7).click();
+     // }
 
-    // await page.locator("#add-to-cart-sauce-labs-backpack").click();
-    // await page.locator("#add-to-cart-sauce-labs-bike-light").click();
-    // await page.locator("#add-to-cart-sauce-labs-bolt-t-shirt").click();
-    // await page.locator("#add-to-cart-sauce-labs-onesie").click();
-    //await page.locator("#add-to-cart-test.allthethings()-t-shirt-(red)").click();
+    await page.locator("#add-to-cart-sauce-labs-backpack").click();
+//     await page.locator("#add-to-cart-sauce-labs-bike-light").click();
+//     await page.locator("#add-to-cart-sauce-labs-bolt-t-shirt").click();
+//     await page.locator("#add-to-cart-sauce-labs-onesie").click();
+  //  await page.locator("#add-to-cart-test.allthethings()-t-shirt-(red)").click();
 
-    const actualCarttotal = 4
-    const expectedCartTotal = page.locator("//span[@class='shopping_cart_badge']")
-
-    // it is check the cart count is vissible or not
-    await expect(expectedCartTotal).toBeVisible()
+    const expectedCartTotal = 4
+    const actualCarttotal = page.locator("//span[@class='shopping_cart_badge']")
+    // it is check the cart count is vissible or notlet 
+    let totalActualtextContent=  await actualCarttotal.textContent();
+//const totalNumber=Number(totalActualtextContent);
 
     // it is used to compare the expected and actual cart count 
-    await expect(expectedCartTotal).toHaveText(actualCarttotal.toString()) //ask to sir for count or text
+    await expect (totalActualtextContent).toBe(expectedCartTotal.toString()) //ask to sir for count or text
 
     // to check your cart text
+    const expectedCartText = 'Your Cart'
     await page.locator("//a[@class='shopping_cart_link']").click()
-    const expectedCartPage =page.locator("//span[.='Your Cart']")
-    await expect.soft(expectedCartPage).toHaveText("Your Cart") //ask to the sir for actual
+    const actualCartPage = await page.locator("//span[.='Your Cart']") .textContent()
+    await expect.soft(actualCartPage).toBe(expectedCartText) //ask to the sir for actual
 
     //to check remove button count 
     const actualRemoveButton = 4
@@ -76,13 +77,6 @@ test('tester', async({page}) => {
     await expect(expectedThankyouPage).toHaveText(actualThankyouPage)
 
     console.log("Test case is passed successfully")
-
-
-
-
-
-
-  
 
    // await page.locator("//button[.='Add to cart']").nth(4).click();
 })
