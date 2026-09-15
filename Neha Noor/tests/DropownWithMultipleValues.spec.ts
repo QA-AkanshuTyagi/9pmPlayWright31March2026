@@ -13,3 +13,6 @@ await country.selectOption([{label:'Red'},{label:'Green'}])
 //await page.waitForTimeout(4000)
 
 })
+
+// use ctrl+shift p when handling dropdown options not fixed and use a emulate a focused page
+//works only when inspect page is open
