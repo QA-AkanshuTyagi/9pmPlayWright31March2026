@@ -26,3 +26,9 @@ const location= page.locator("//div[@id='div2']")
 await symbol.dragTo(location);
 await page.waitForTimeout(6000)
 })
+
+test('t06@upload',async({page})=>{
+
+console.log("t05 test case is running")
+
+})
