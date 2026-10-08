@@ -1,4 +1,4 @@
-import { Page, Locator,test } from "@playwright/test";
+import { Page, Locator, test } from "@playwright/test";
 
 export class fbLoginPage {
   readonly page: Page;
@@ -7,10 +7,9 @@ export class fbLoginPage {
   readonly loginButtonLocator: Locator;
   readonly userNameLocator: Locator;
   constructor(page: Page) {
-    
     this.page = page;
-    this.userNameLocator = this.page.locator("#_R_1h6kqsqppb6amH1_");
-    this.password = page.locator("_R_1hmkqsqppb6amH1_");
+    this.userNameLocator = this.page.locator("#_R_c9l6neappb6amH1_");
+    this.password = page.locator("#_R_cdl6neappb6amH1_");
     this.loginButtonLocator = page.locator("//div[@aria-label='Log in']");
   }
 
@@ -29,6 +28,3 @@ export class fbLoginPage {
     await this.loginButtonLocator.click();
   }
 }
-
-
-
