@@ -2,6 +2,7 @@ import {test,expect,BrowserContext,Page,Browser} from '@playwright/test'
 
 test('SavyntLogin', async ({browser}) => {
     //initiate a browser context --it is used to fresh session means without store cookies & cache
+    test.slow();
     const context:BrowserContext = await browser.newContext(); //opening fresh browser context
     const page:Page = await  context.newPage(); //opening new page in the browser context
 
@@ -87,7 +88,60 @@ test('SavyntLogin', async ({browser}) => {
     // const disableTabs = await page.locator("(//a[@class='step small disabled-step'])[1]").textContent()
     // console.log(disableTabs)
 
+    await page.locator("//a[@id='arsReqAcessCheckout']").click()
 
+    //access page -dynamic puchna hai hand written ni
+
+    const expectedAccessPage = await page.locator(".requestaccessul>h4").textContent()
+    console.log(expectedAccessPage)
+    expect(expectedAccessPage).toBe('Select Access')
+
+    //Select Entitlement from the list
+    //await page.locator("//table[@id='myDataTable4_ALL']/tbody/tr[1]/td[2]/div/a").click()
+
+    //await page.getByRole('table').getByText('ROLE_ADMIN').locator('a#addEntitlement').click()
+    
+    await page.getByRole('table').filter({hasText:'ROLE_ADMIN'}).locator("(//a[@id='addEntitlement'])[1]").click()
+    const expectedSelectedEntitlements = await page.locator("//div[.='Entitlements Not Selected']").textContent()
+    console.log(expectedSelectedEntitlements)
+    expect(expectedSelectedEntitlements).not.toContainEqual('Entitlements Not Selected')
+    await page.locator("//a[@id='arsReqAcessCheckout']").click()
+    // if(expectedSelectedEntitlements != 'Entitlements Not Selected'){
+    // await page.locator("//a[@id='arsReqAcessCheckout']").click()
+    // }
+    // else{
+    //     console.log('Try Again')
+    // }
+
+    //Review Page
+    const expectedReviewPage = await page.locator(".step-3-header>div>div>h4").textContent()
+    console.log(expectedReviewPage)
+    expect(expectedReviewPage).toBe('Review & Justification')
+
+    await page.getByLabel('Comments').fill('Test')
+    
+    const uploadButton= page.locator("input[type='file']");
+    let path="C:/Users/ASUS/OneDrive/Desktop/Dummy Doc.pdf"
+    let path1="C:/Users/ASUS/OneDrive/Desktop/Dummy Doc.docx"
+    if(!path.endsWith('.pdf'))
+        {
+           await uploadButton.setInputFiles(path);
+           console.log("PDF File uploaded")
+
+         }
+    else
+        {
+        await uploadButton.setInputFiles(path1);
+        console.log("Doc file has been uploaded")
+        }
+    await page.waitForTimeout(2000)
+
+    await page.locator("#disclaimerCheckbox").click()
+    await page.locator("//a[.='Submit Request']").click()
+
+    await page.waitForTimeout(10_000)
+
+    
     
 
 
