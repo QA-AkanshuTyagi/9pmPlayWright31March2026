@@ -1,5 +1,5 @@
 import { fbLoginPage } from "../Oops/FbLoginPage";
-import { test } from "@playwright/test";
+import { test } from "playwright/test";
 import { data } from "../DataFetching/object";
 import dataset from "../DataFetching/DataSet.json";
 test.describe("running all my login page tests", () => {
