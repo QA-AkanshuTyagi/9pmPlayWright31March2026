@@ -66,5 +66,5 @@ function loginDetailsTc01(username1,password1) // we have pass the value in the 
    }      
 }
 
-loginDetails("Shashank","admin");
+loginDetailsTc01("Shashank","admin");
 
